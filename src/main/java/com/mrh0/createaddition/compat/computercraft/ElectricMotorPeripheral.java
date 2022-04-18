@@ -44,8 +44,7 @@ public class ElectricMotorPeripheral implements IPeripheral {
     public boolean equals(IPeripheral iPeripheral) {
         return iPeripheral == this;
     }
-    
-    @LuaFunction
+
     public final String getType() {
         return type;
     }
