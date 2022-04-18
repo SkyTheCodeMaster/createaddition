@@ -17,7 +17,7 @@ motor.stop()
 ```
 In the following example, the motor attached to the left of the computer will rotate at 32RPM for 5 seconds and then stop.
 ```lua
-motor = peripheral.wrap("left")
+local motor = peripheral.wrap("left")
 motor.setSpeed(32)
 sleep(5)
 motor.stop()
@@ -31,7 +31,7 @@ motor.stop()
 ```
 In the following example, the motor will first rotate 180 degrees in the clockwise direction, then 180 degrees at half the speed in the anti-clockwise direction and then finaly stop.
 ```lua
-motor = peripheral.wrap("left")
+local motor = peripheral.wrap("left")
 sleep(motor.rotate(180, 32))
 sleep(motor.rotate(-180, 16))
 motor.stop()
@@ -45,7 +45,7 @@ motor.stop()
 ```
 In the following example, the motor attached to a piston will extend the piston by 5 blocks, stop for a second, retract, and then finally stop.
 ```lua
-motor = peripheral.wrap("left")
+local motor = peripheral.wrap("left")
 sleep(motor.translate(5, 32))
 sleep(1)
 sleep(motor.translate(-5, 32))
